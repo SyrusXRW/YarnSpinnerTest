@@ -1,11 +1,17 @@
 ﻿title: Start
 ---
-Wow!
-Syrus: My first ever Yarn script in Unity!
+<<declare $characterName = "Player">>
 
--> Gosh!
--> Incredible!
--> I'm amazed!
-
-Anyway, time to get writing!
+Narrator: Hi there!
+Narrator: What's your actual name, anyway?
+    -> My name is Bruce.
+        <<set $characterName to "Bruce">>
+    -> My name is not Bruce.
+        <<set $characterName to "Notbruce">>
+    -> My name doesn't matter...
+Narrator: Ah, nice to meet you, {$characterName}!
 ===
+
+
+//-> = option for player// 
+//To put a name it's Name: insert text here//
